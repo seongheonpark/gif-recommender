@@ -1,0 +1,30 @@
+# OS / 에디터
+.DS_Store
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# 비밀 정보
+.env
+.streamlit/secrets.toml
+
+# 모델 가중치 (Hugging Face Hub에서 받음)
+models/*
+!models/README.md
+*.pt
+*.pth
+*.safetensors
+
+# 데이터 (재배포 불가 원본 + 전처리 결과)
+data/raw/*
+data/processed/
+!data/raw/.gitkeep
+
+# 학습 결과물
+outputs/
